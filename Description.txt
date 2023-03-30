@@ -4,3 +4,7 @@
 4. 
 b3galt3:
 Needle: score -21800, Stretcher: score 75158
+A4GALT:
+Needle: score -24155, Stretcher: score 93255
+5. Stretcher показал лучший score, поскольку имеет больший % Identities, хоть и меньший % Gaps.
+И еще я выставил для Needle слишком высокие штрафы за Gap. Так что по идее Needle показал лучший результат, ввиду значительно меньшего % Gap'ов
