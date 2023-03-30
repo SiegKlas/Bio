@@ -1,0 +1,6 @@
+1. BLOOD GROUP
+2. B3GALT3, A4GALT
+3. Human and Mouse
+4. 
+b3galt3:
+Needle: score -21800, Stretcher: score 75158
