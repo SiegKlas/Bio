@@ -1,0 +1,15 @@
+2. IL10 interleukin 10
+3. Параметры по умолчанию (наиболее похожие последовательсности)
+4. 
+1: Macaca mulatta - BAC CH250-472C13 - бенгальский макак
+2: Pan troglodytes - interleukin 10, transcript variant X2, mRNA - обыкновенный шимпанзе
+3: Pan paniscus - interleukin 10, mRNA - карликовый шимпанзе
+4: Gorilla gorilla gorilla - interleukin 10, mRNA - западная равнинная горилла
+5: Pongo abelii - interleukin 10, mRNA - Суматранский орангутан
+6: Hylobates moloch - interleukin 10, mRNA - Серебристый гиббон
+7: Nomascus leucogenys - interleukin 10, mRNA - Белощёкий хохлатый гиббон
+8: Phocoena sinus - interleukin 10, mRNA - Калифорнийская морская свинья
+9: Lontra canadensis - interleukin 10, mRNA - Канадская выдра
+10: Prionailurus viverrinus - interleukin 10, transcript variant X1, mRNA - Кошка-рыболов
+(Не млекопитающих найдено не было)
+5. 
