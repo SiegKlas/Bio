@@ -2,7 +2,8 @@
 3. Параметры по умолчанию (наиболее похожие последовательсности)
 4. 
 1: Macaca mulatta - BAC CH250-472C13 - бенгальский макак
-2: Pan troglodytes - interleukin 10, transcript variant X2, mRNA - обыкновенный шимпанзе
+2: Не используется в выравнивании, т.к. слишком длинный и долго считает
+Pan troglodytes - interleukin 10, transcript variant X2, mRNA - обыкновенный шимпанзе
 3: Pan paniscus - interleukin 10, mRNA - карликовый шимпанзе
 4: Gorilla gorilla gorilla - interleukin 10, mRNA - западная равнинная горилла
 5: Pongo abelii - interleukin 10, mRNA - Суматранский орангутан
@@ -12,4 +13,7 @@
 9: Lontra canadensis - interleukin 10, mRNA - Канадская выдра
 10: Prionailurus viverrinus - interleukin 10, transcript variant X1, mRNA - Кошка-рыболов
 (Не млекопитающих найдено не было)
-5. 
+5. muscle-I20230413-175748-0364-88194957-p1m.clw
+6. Строки 7-12, 27-28, 33-36, 52-53, 72-84, 90-91 демонстрируют почти консервативные участик, с небольшими пробеами, возникающих в основном
+из-за человека, карликового шимпанзе и западной равнинной гориллы. 
+7. Общий таксон - Mammalia, млекопитающие. Отличительной особенностью является вскармливание детёнышей молоком
