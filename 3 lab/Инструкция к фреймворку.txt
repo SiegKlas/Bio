@@ -1,0 +1,5 @@
+1. pip install flytekit scikit-learn
+2. curl -sL https://ctl.flyte.org/install | sudo bash -s -- -b /usr/local/bin
+3. Запуск HelloWorld:
+pyflyte run example.py training_workflow \
+    --hyperparameters '{"C": 0.1}'
