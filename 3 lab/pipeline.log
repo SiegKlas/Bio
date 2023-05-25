@@ -1,0 +1,75 @@
+==============================================
+
+
+    rm -f ali.sam
+    ./minimap2 -a -t 6 GCF_000005845.2_ASM584v2_genomic.fna SRR24658890.fasta > ali.sam
+    echo minimap2 finished
+
+
+==============================================
+
+[M::mm_idx_gen::0.141*0.77] collected minimizers
+[M::mm_idx_gen::0.173*0.63] sorted minimizers
+[M::main::0.173*0.63] loaded/built the index for 1 target sequence(s)
+[M::mm_mapopt_update::0.186*0.59] mid_occ = 12
+[M::mm_idx_stat] kmer size: 15; skip: 10; is_hpc: 0; #seq: 1
+[M::mm_idx_stat::0.196*0.56] distinct minimizers: 838542 (98.18% are singletons); average occurrences: 1.034; average spacing: 5.352; total length: 4641652
+[M::worker_pipeline::12.646*2.99] mapped 1377902 sequences
+[M::main] Version: 2.26-r1175
+[M::main] CMD: ./minimap2 -a -t 6 GCF_000005845.2_ASM584v2_genomic.fna SRR24658890.fasta
+[M::main] Real time: 12.730 sec; CPU: 37.797 sec; Peak RSS: 0.663 GB
+minimap2 finished
+
+==============================================
+
+
+    rm -f quality.txt
+    touch quality.txt
+    QUALITY=$(samtools flagstat /tmp/flyte-ydcg23n4/raw/cc51a979b880c96d7d267a3e9393c65f/ali.sam | python3 -c 'from sys import stdin; f=stdin.read(); import re; print(re.findall("\d+.\d+%", f)[0].replace("%", ""))')
+    echo $QUALITY >> quality.txt
+
+
+==============================================
+
+
+==============================================
+
+
+    python3 -c 'f = open("/tmp/flyte-ydcg23n4/raw/ab9568e4b12937e1939db531e00ccce7/quality.txt", "r", encoding="utf-8").read();
+if int(float(f)) > 90: print("OK");
+else: print("NOT OK")'
+    rm -f /tmp/flyte-ydcg23n4/raw/ab9568e4b12937e1939db531e00ccce7/quality.txt
+
+
+==============================================
+
+NOT OK
+
+==============================================
+
+
+    rm -f ali.bam
+    samtools view -S -b /tmp/flyte-ydcg23n4/raw/cc51a979b880c96d7d267a3e9393c65f/ali.sam > ali.bam
+
+
+==============================================
+
+
+==============================================
+
+
+    rm -f ali.sorted.bam
+    samtools sort /tmp/flyte-ydcg23n4/raw/3143817f91e2b431d969a53d750d39bb/ali.bam -o ali.sorted.bam
+
+
+==============================================
+
+
+==============================================
+
+
+    rm -f var.vcf
+    freebayes -f GCF_000005845.2_ASM584v2_genomic.fna /tmp/flyte-ydcg23n4/raw/43d1da110b8c626a36b4e5dfd541f435/ali.sorted.bam > var.vcf
+
+
+==============================================
